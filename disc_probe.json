@@ -1,0 +1,30 @@
+{
+  "cue_name": "Legacy of Kain - Soul Reaver (Europe).cue",
+  "bin_name": "Legacy of Kain - Soul Reaver (Europe).bin",
+  "track_count": 1,
+  "data_track_size": 682987872,
+  "data_track_md5": "9e38befb10415dd4d2fee9d02cf016e7",
+  "data_track_sha1": "f1ec508b68d24608f0ce1a939faa3e2a7d80f329",
+  "data_track_sha256": "9ac300d56b879699d15331aab395fa57a137752dfdc2aa5569874445a0b933df",
+  "data_track_crc32": "8bc0d7b5",
+  "boot_exe": "SLES_013.01",
+  "serial": "SLES-01301",
+  "serial_exe": "SLES_013.01",
+  "volume_id": "",
+  "display_name": "Legacy of Kain Soul Reaver",
+  "load_address": "0x80010000",
+  "entry_pc": "0x800B72D0",
+  "text_size": "0x000C0800",
+  "stack_base": "0x801FFFF0",
+  "require_cue": true,
+  "required_disc_fp": "64eb0d0c4b2a73ea284d090cc820c0468381ac5c1edd636c5677f1069acb0007",
+  "boot_exe_sha256": "c83aa1f7c78ff4e09b1d6f92bc8f63c065c2d867ee4d87531dcce4fd9bf7ba03",
+  "seed_count": 2152,
+  "warnings": [],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity).",
+    "This verified Redump release is a complete one-track disc."
+  ]
+}

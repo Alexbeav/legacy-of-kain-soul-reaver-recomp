@@ -1,0 +1,48 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "Legacy of Kain: Soul Reaver",
+    "id": "SLES-01301",
+    "boot_exe": "SLES_013.01"
+  },
+  "marketing": {
+    "description": "Legacy of Kain: Soul Reaver recompiled for modern systems using psxrecomp.",
+    "publisher": "Eidos Interactive",
+    "year": "1999",
+    "region": "Europe",
+    "players": 1
+  },
+  "rom_identity": {
+    "cue_name": "Legacy of Kain - Soul Reaver (Europe).cue",
+    "bin_name": "Legacy of Kain - Soul Reaver (Europe).bin",
+    "track_counts": [
+      1
+    ],
+    "require_cue": true,
+    "data_track": {
+      "size": 682987872,
+      "md5": "9e38befb10415dd4d2fee9d02cf016e7",
+      "sha1": "f1ec508b68d24608f0ce1a939faa3e2a7d80f329",
+      "sha256": "9ac300d56b879699d15331aab395fa57a137752dfdc2aa5569874445a0b933df",
+      "crc32": "8bc0d7b5"
+    },
+    "disc_fp": "64eb0d0c4b2a73ea284d090cc820c0468381ac5c1edd636c5677f1069acb0007"
+  },
+  "exe": {
+    "load_address": "0x80010000",
+    "entry_pc": "0x800B72D0",
+    "text_size": "0x000C0800",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 2152,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity).",
+    "This verified Redump release is a complete one-track disc."
+  ]
+}

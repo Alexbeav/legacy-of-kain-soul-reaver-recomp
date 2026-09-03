@@ -1,0 +1,56 @@
+# Autofilled by tools/new_project_layout/probe_disc.py from your legal dump.
+# Review before shipping. Runtime quirks / overlay seeds still need hand work.
+
+[game]
+name = "Legacy of Kain: Soul Reaver"
+id = "SLES-01301"
+players = 1
+exe = "disc/SLES_013.01"
+disc = "disc/Legacy of Kain - Soul Reaver (Europe).cue"
+load_address = "0x80010000"
+entry_pc = "0x800B72D0"
+text_size = "0x000C0800"
+stack_base = "0x801FFFF0"
+
+# Digests are for data Track 01 (first BINARY FILE / TRACK 01).
+[prepare_disc]
+out_dir = "disc"
+bin_name = "Legacy of Kain - Soul Reaver (Europe).bin"
+cue_name = "Legacy of Kain - Soul Reaver (Europe).cue"
+boot_exe = "SLES_013.01"
+known_sizes = [682987872]
+known_md5 = [
+  "9e38befb10415dd4d2fee9d02cf016e7",
+]
+known_sha1 = [
+  "f1ec508b68d24608f0ce1a939faa3e2a7d80f329",
+]
+known_crc32 = [
+  "8bc0d7b5",
+]
+
+[recompiler]
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+bios_config = "psxrecomp/bios/SCPH5552.toml"
+strict = true
+
+[runtime]
+window_title = "Legacy of Kain: Soul Reaver Recompiled"
+memcard_dir = "saves"
+bios_hle = false
+openbios = false
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+# Online mount gate: digests + track count + optional TOC fingerprint
+# (see docs/NETPLAY.md).
+[netplay]
+require_cue = true
+required_tracks = 1
+required_disc_fp = "64eb0d0c4b2a73ea284d090cc820c0468381ac5c1edd636c5677f1069acb0007"
